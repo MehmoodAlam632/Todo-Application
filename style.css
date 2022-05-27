@@ -34,6 +34,7 @@ header h1 {
 }
 #new-task-form {
     display: flex;
+    justify-content: center;
 }
 input, button {
     appearance: none;
@@ -47,6 +48,7 @@ input, button {
     padding: 1rem;
     border-radius: 1rem;
     margin-right: 1rem;
+    margin-left: 1rem;
     color: var(--light);
     font-size: 1.25rem;
 }
@@ -58,8 +60,8 @@ input, button {
     color: var(--pink);
     font-weight: 700;
     background-image: linear-gradient(var(--pink), var(--purpole));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */ */
     cursor: pointer;
     transition: 0.4s;
 }
@@ -93,6 +95,9 @@ main {
     border-radius: 1rem;
     margin-bottom: 3rem;
 }
+#tasks .task .content{
+    flex: 1 1 0%;
+}
 #tasks .task .content .text {
     color: var(--light);
     font-size: 1.125rem;
@@ -122,10 +127,13 @@ main {
     opacity: 0.1;
 }
 .task .actions .edit {
+    font-size: 18px;
     background-image: linear-gradient(var(--pink), var(--purpole));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .task .actions .delete {
     color: crimson;
+    font-size: 18px;
+    margin-left: 5px;
 }
